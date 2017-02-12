@@ -1,0 +1,12 @@
+{
+  "name": "nberrios.github.io",
+  "version": "1.0.0",
+  "description": "Nicks Personal Page",
+  "main": "index.js",
+  "repository": "https://github.com/nberrios/nberrios.github.io.git",
+  "author": "Nick Berrios",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.1.10"
+  }
+}
