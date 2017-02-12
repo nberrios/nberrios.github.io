@@ -70,8 +70,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-document.write('Brought to you by Nick Productions');
-
+throw new Error("Module parse failed: /home/nberrios/checkouts/git/nberrios.github.io/entry.js Unexpected token (2:39)\nYou may need an appropriate loader to handle this file type.\n| document.write('Brought to you by Nick Productions');\n| document.write(require(\"./contents.js\");\n| ");
 
 /***/ })
 /******/ ]);
