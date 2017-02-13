@@ -108,7 +108,7 @@ exports = module.exports = __webpack_require__(3)();
 
 
 // module
-exports.push([module.i, "body {\n    background: yellow;\n}\n", ""]);
+exports.push([module.i, "body {\n    background: #fff;\n    text-align: center;\n    margin: 200px;\n}\n", ""]);
 
 // exports
 
