@@ -68,13 +68,6 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
-
-module.exports = 'It works... from contents.js!';
-
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -89,8 +82,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./node_modules/css-loader/index.js!./styles.css", function() {
-			var newContent = require("!!./node_modules/css-loader/index.js!./styles.css");
+		module.hot.accept("!!./../../node_modules/css-loader/index.js!./styles.css", function() {
+			var newContent = require("!!./../../node_modules/css-loader/index.js!./styles.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -98,6 +91,13 @@ if(false) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+module.exports = 'It works... from contents.js!';
+
 
 /***/ }),
 /* 2 */
@@ -426,8 +426,8 @@ function updateLink(linkElement, obj) {
 /***/ (function(module, exports, __webpack_require__) {
 
 document.write('Brought to you by Nick Productions');
-document.write(__webpack_require__(0));
-__webpack_require__(1);
+document.write(__webpack_require__(1));
+__webpack_require__(0);
 
 
 /***/ })
