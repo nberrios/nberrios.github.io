@@ -427,7 +427,7 @@ function updateLink(linkElement, obj) {
 
 document.write('Brought to you by Nick Productions');
 document.write(__webpack_require__(0));
-__webpack_require__(1);
+document.write(__webpack_require__(1));
 
 
 /***/ })
