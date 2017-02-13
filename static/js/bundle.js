@@ -108,7 +108,7 @@ exports = module.exports = __webpack_require__(3)();
 
 
 // module
-exports.push([module.i, "body {\n    background: #fff;\n    text-align: center;\n    margin: 200px;\n    font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\n    font-size: 14px;\n    line-height: 20px;\n    color: #333333;\n}\n\n.navbar {\n    overflow: visible;\n    margin-bottom: 20px;\n}\n.navbar-inner {\n    min-height: 40px;\n    padding-left: 20px;\n    padding-right: 20px;\n    background-color: #fafafa;\n    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);\n    background-repeat: repeat-x;\n    border: 1px solid #d4d4d4;\n    border-radius: 4px;\n    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);\n}\n.container-narrow {\n    margin: 0 auto;\n    max-width: 700px;\n}\n", ""]);
+exports.push([module.i, "body {\n    margin: 0;\n    font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\n    font-size: 14px;\n    line-height: 20px;\n    color: #333333;\n    background-color: #ffffff;\n}\n\n.navbar {\n    overflow: visible;\n    margin-bottom: 20px;\n}\n.navbar-inner {\n    min-height: 40px;\n    padding-left: 20px;\n    padding-right: 20px;\n    background-color: #fafafa;\n    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);\n    background-repeat: repeat-x;\n    border: 1px solid #d4d4d4;\n    border-radius: 4px;\n    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);\n}\n.container-narrow {\n    margin: 0 auto;\n    max-width: 700px;\n}\n", ""]);
 
 // exports
 
