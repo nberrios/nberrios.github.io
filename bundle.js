@@ -63,14 +63,23 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: /home/nberrios/checkouts/git/nberrios.github.io/entry.js Unexpected token (2:39)\nYou may need an appropriate loader to handle this file type.\n| document.write('Brought to you by Nick Productions');\n| document.write(require(\"./contents.js\");\n| ");
+module.exports = 'It works... from contents.js!';
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+document.write('Brought to you by Nick Productions');
+document.write(__webpack_require__(0));
+
 
 /***/ })
 /******/ ]);
