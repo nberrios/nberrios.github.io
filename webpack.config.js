@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 module.exports = {
     entry: './static/js/entry.js',
     output: {
@@ -10,6 +11,21 @@ module.exports = {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader',
             },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+            },
         ],
     },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+            },
+            output: {
+                comments: false,
+            },
+        }),
+    ]
 };
