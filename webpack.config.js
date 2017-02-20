@@ -1,20 +1,28 @@
 const webpack = require('webpack');
+var path = require('path');
 module.exports = {
-    entry: './static/js/entry.js',
+    entry: [
+        // ES6 environemnt
+        'babel-polyfill',
+        // application scripts
+        './src/static/js/entry.js'],
     output: {
         path: __dirname,
-        filename: './static/js/bundle.js',
+        filename: './src/static/js/bundle.js',
     },
     module: {
         loaders: [
             {
-                test: /\.css$/,
+                test: /\.s?css$/,
                 loader: 'style-loader!css-loader',
             },
             {
-                test: /\.js$/,
-                exclude: /node_modules/,
+                // only run `.js` + `.jsx` through babel
+                test: /\.jsx?$/,
                 loader: 'babel-loader',
+                include: [
+                    path.resolve(__dirname, 'src')
+                ]
             },
         ],
     },
